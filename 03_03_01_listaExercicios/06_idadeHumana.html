@@ -10,11 +10,21 @@
     */
 
     // ENTRADA
-
-    
+    let idade = prompt("qual a idade de seu cão?").toLowerCase()
+    const porte = prompt("qual o porte do seu cão?").toLowerCase()
     // PROCESSAMENTO
+    switch (porte) {
+        case "pequeno":
+            idade = idade * 5
+            break;
+        case "médio":
+            idade = idade * 6
+            break;
+        case "grande":
+            idade = idade * 7
+            break;
+    }
 
-    
     // SAÍDA
-
+    alert(`${idade}`)
 </script>

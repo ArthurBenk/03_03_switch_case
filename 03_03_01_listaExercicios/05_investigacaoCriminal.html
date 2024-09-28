@@ -12,11 +12,54 @@
     */
 
     //ENTRADA
-
-    
+    const telefonou = prompt("Telefonou para a vítima?").toLowerCase()
+    const local = prompt("Esteve no local do crime?").toLowerCase()
+    const mora = prompt("Mora perto da vítima?").toLowerCase()
+    const devia = prompt("Devia para a vítima?").toLowerCase()
+    const trabalhou = prompt("Já trabalhou com a vítima?").toLowerCase()
+    let assasino = 0
     //PROCESSAMENTO
-
+    switch (telefonou) {
+        case "sim":
+            assasino = assasino + 1
+            break;
+    }
+    switch (local) {
+        case "sim":
+            assasino = assasino + 1
+            break;
+    }
+    switch (mora) {
+        case "sim":
+            assasino = assasino + 1
+            break;
+    }
+    switch (devia) {
+        case "sim":
+            assasino = assasino + 1
+            break;
+    }
+    switch (trabalhou) {
+        case "sim":
+            assasino = assasino + 1
+            break;
+    }
 
     //SAÍDA
+    switch (assasino) {
+        case 5:
+        alert("assasino")
+            break;
+        case 4||3:
+        alert("cumplice")
+            break;
+        case 2:
+        alert("suspeito")
+            break;
+        case 1||0:
+        alert("inocente")
+            break;
+
+    }
 
 </script>
